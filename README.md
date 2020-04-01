@@ -41,8 +41,9 @@ So before we jump into converting our loose functions into a `Class` we need to 
 
 ```js
 class Pokemon {
-    constructor(name){
-        this.name = name
+    constructor(name, number){
+        this.name = name,
+        this.number = number
     }
 }
 ```
@@ -62,8 +63,8 @@ Let's see this in action. Lets say I want to create two new instances of a Pokem
 * The `second instance` should be for a Machop Pokemon
 
 ```js
-let firstPokemonInstance = new Pokemon("Gengar")
-let secondPokemonInstance = new Pokemon("Machamp")
+let firstPokemonInstance = new Pokemon("Gengar", 94)
+let secondPokemonInstance = new Pokemon("Machamp", 68)
 
 console.log(firstPokemonInstance)
 console.log(secondPokemonInstance)
@@ -80,8 +81,9 @@ Lets move our loose functions into the Pokemon `Class`:
 
 ```js
 class Pokemon {
-    constructor(name){
-        this.name = name
+    constructor(name, number){
+        this.name = name,
+        this.number = number
     }
 
     battle = (attack) => {
@@ -98,8 +100,8 @@ class Pokemon {
 }
 
 
-let gengar = new Pokemon("Gengar")
-let machamp = new Pokemon("Machamp")
+let gengar = new Pokemon("Gengar", 94)
+let machamp = new Pokemon("Machamp", 68)
 
 console.log(gengar)
 console.log(machamp)
