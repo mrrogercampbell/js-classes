@@ -24,14 +24,14 @@ In the context of a JavaScript `Classes`:
 
 We know basic `functions` allow us to define blocks of code that are reusable. The limitation with functions is that we normally only create them do one specific thing like add two numbers together.
 
-Lets say we want to create a application that allows us to battle pokemon. We could write 3 functions to control our pokemon:
+Let's say we want to create an application that allows us to battle pokemon. We could write 3 functions to control our pokemon:
 ```js
 const battle = (attack) => {
     console.log(`The Pokemon attacks with ${attack} and does 5hp of damage`)
 }
 
 const eat = (berry) => {
-    console.log(`The Pokemon eats a ${berry} berry and gains 10hp!`)
+    console.log(`The Pokemon eats an ${berry} berry and gains 10hp!`)
 }
 
 const sayHello = (name) => {
@@ -45,10 +45,10 @@ battle('pounce')
 // output: The Pokemon attacks with pounce and does 5hp of damage
 
 eat('Oran')
-// output: The Pokemon eats a Oran berry and gains 10hp!
+// output: The Pokemon eats an Oran berry and gains 10hp!
 
 sayHello('Gengar')
-// output: Gengar!, Gengar!, Gengar! 
+// output: Gengar!, Gengar!, Gengar!
 ```
 
 Our code above works and its pretty clean. But lets say we have a database with over 200 Pokemon and we need to be able to have them all battle at one. Do we really want to write out all that code for each Pokemon? Heck No!
@@ -155,19 +155,30 @@ console.log(machamp)
 Now lets check to see if our logic is functional.
 ```js
 machamp.battle("Dynamic Punch")
+// Output: Machamp attacks with Dynamic Punch and does 5hp of damage
+
 machamp.eat('Oran')
+// Output: Machamp eats a Oran berry and gains 10hp!
+
 machamp.sayHello()
+// Output: Machamp!, Machamp!, Machamp!
+
 
 gengar.battle("Shadow Ball")
+// Output: Gengar attacks with Shadow Ball and does 5hp of damage
+
 gengar.eat('Oran')
+// Output: Gengar eats a Oran berry and gains 10hp!
+
 gengar.sayHello()
+// Output: Gengar!, Gengar!, Gengar!
 
 ```
 
 ![Gengar vs Machamp](./images/gangar-vs-machamp.jpg "Gengar vs Machamp")
 
 ## Challenge
-Create a arena class where you can put two pokemon inside of and have them fight.
+Create an arena class where you can put two pokemon inside of and have them fight.
 
 Your arena class should:
 1. Store the pokemon entered into an array
