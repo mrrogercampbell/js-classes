@@ -5,17 +5,9 @@ When creating an application there are times when we might need to create many o
 
 When faced with this kind of repetitiveness it is a perfect time to create a `Class`.
 
-## Prerequisites
-* Basic JavaScript Syntax
-* Objects
-
-## Objectives
-By the end of this lesson developers should be able to:
-
-* Define and explain the difference between a class and an instance
-* Define a class with proper JavaScript syntax and create multiple instances of said class
-
+## Table of Contents
 - [Classes](#classes)
+  - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
   - [Objectives](#objectives)
   - [What is a Class?](#what-is-a-class)
@@ -26,6 +18,18 @@ By the end of this lesson developers should be able to:
     - [Access an Instances Attributes](#access-an-instances-attributes)
     - [Methods](#methods)
   - [Challenge](#challenge)
+
+## Prerequisites
+* Basic JavaScript Syntax
+* Objects
+
+## Objectives
+By the end of this lesson developers should be able to:
+
+* Define and explain the difference between a class and an instance
+* Define a class with proper JavaScript syntax and create multiple instances of said class
+
+
 
 ## What is a Class?
 A `Class` in the context of JavaScript, is a programing-code-template for creating a type of `object` that allows us to define variables and functions.
