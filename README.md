@@ -15,7 +15,7 @@ When faced with this kind of repetitiveness it is a perfect time to create a `Cl
     - [The Constructor](#the-constructor)
     - [this? Wait.. What?](#this-wait-what)
     - [An Instance](#an-instance)
-    - [Access an Instances Attributes](#access-an-instances-attributes)
+    - [Accessing Class Attributes](#accessing-class-attributes)
     - [Methods](#methods)
   - [Challenge](#challenge)
 
@@ -130,7 +130,7 @@ If you run the code snippet above you will see that each `Variable` is storing a
 
 Each `instance` of the class has stored the `arguments` we passed in to the `constructor` when we initialize it.
 
-### Access an Instances Attributes
+### Accessing Class Attributes
 In order to access the `attributes` you defined in the `constructor` you must use `dot notation`.
 
 ```js
