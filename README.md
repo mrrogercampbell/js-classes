@@ -15,6 +15,18 @@ By the end of this lesson developers should be able to:
 * Define and explain the difference between a class and an instance
 * Define a class with proper JavaScript syntax and create multiple instances of said class
 
+- [Classes](#classes)
+  - [Prerequisites](#prerequisites)
+  - [Objectives](#objectives)
+  - [What is a Class?](#what-is-a-class)
+  - [Class Syntax](#class-syntax)
+    - [The Constructor](#the-constructor)
+    - [this? Wait.. What?](#this-wait-what)
+    - [An Instance](#an-instance)
+    - [Access an Instances Attributes](#access-an-instances-attributes)
+    - [Methods](#methods)
+  - [Challenge](#challenge)
+
 ## What is a Class?
 A `Class` in the context of JavaScript, is a programing-code-template for creating a type of `object` that allows us to define variables and functions.
 
@@ -114,7 +126,7 @@ If you run the code snippet above you will see that each `Variable` is storing a
 
 Each `instance` of the class has stored the `arguments` we passed in to the `constructor` when we initialize it.
 
-## Access an Instances Attributes
+### Access an Instances Attributes
 In order to access the `attributes` you defined in the `constructor` you must use `dot notation`.
 
 ```js
