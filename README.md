@@ -75,10 +75,10 @@ So before we jump into converting our loose functions into `Methods` within a `C
 ```js
 class Pokemon {
     constructor(){
-        // Build the class with some basic Attributes
+        // Where we define our default Attributes which will be created with each instance
     }
 
-    // Define Methods
+    // Where we define our Methods
 }
 ```
 
@@ -206,7 +206,7 @@ gengar.sayHello()
 
 ```
 
-![Gengar vs Machamp](./images/gangar-vs-machamp.jpg "Gengar vs Machamp")
+![Gengar vs Machamp](./images/gangar-vs-machamp.jpg  "Gengar vs Machamp")
 
 ## Challenge
 Create an arena class where you can put two pokemon inside of and have them fight.
