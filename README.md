@@ -153,10 +153,10 @@ Lets move our loose functions into the Pokemon `Class`:
 ```js
 class Pokemon {
     constructor(name, number, hp, type) {
-        this.name = name,
-            this.number = number,
-            this.hp = hp,
-            this.type = type
+        this.name = name
+        this.number = number
+        this.hp = hp
+        this.type = type
     }
 
     battle = (attack) => {
