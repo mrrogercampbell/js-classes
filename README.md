@@ -114,6 +114,21 @@ If you run the code snippet above you will see that each `Variable` is storing a
 
 Each `instance` of the class has stored the `arguments` we passed in to the `constructor` when we initialize it.
 
+## Access an Instances Attributes
+In order to access the `attributes` you defined in the `constructor` you must use `dot notation`.
+
+```js
+console.log(firstPokemonInstance.name)
+// Output: Gengar
+console.log(firstPokemonInstance.number)
+// Output: 94
+
+console.log(secondPokemonInstance.name)
+// Output: Machamp
+console.log(secondPokemonInstance.number)
+// Output: 68
+```
+
 ### Methods
 `Methods` are just functions that you store inside of a `Class`. They allow you to predefine logical that you want every `instance` of your `class` to be able to do.
 
@@ -121,24 +136,24 @@ Lets move our loose functions into the Pokemon `Class`:
 
 ```js
 class Pokemon {
-       constructor(name, number, hp, type){
+    constructor(name, number, hp, type) {
         this.name = name,
-        this.number = number,
-        this.hp = hp,
-        this.type = type
+            this.number = number,
+            this.hp = hp,
+            this.type = type
     }
 
     battle = (attack) => {
         console.log(`${this.name} attacks with ${attack} and does 5hp of damage`)
-}
+    }
 
     eat = (berry) => {
         console.log(`${this.name} eats a ${berry} berry and gains 10hp!`)
-}
+    }
 
     sayHello = () => {
         console.log(`${this.name}!, ${this.name}!, ${this.name}! `)
-}
+    }
 }
 
 let gengar = new Pokemon("Gengar", 94, 1000, "Ghost")
